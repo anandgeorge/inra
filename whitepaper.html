@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Whitepaper | INRA - The INR Stablecoin</title>
+  <!-- <meta content="" name="description">
+  <meta content="" name="keywords"> -->
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Techie - v4.10.0
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="/">INRA</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#stats">Stats</a></li>
+          <li><a class="nav-link scrollto" href="/#adoption">Adoption</a></li>
+          <li><a class="nav-link scrollto" href="/#features">Features</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto" href="/#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="/#faq">FAQs</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          <li><a class="getstarted scrollto" href="/#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section class="inner-page">
+      <div class="container">
+        <h1>INRA Whitepaper</h1>
+        <p>INRA is an Indian Rupee stablecoin backed by BUSD (Binance USD), independent collateral pools of INRA-BUSD, INRA-BAT and a rate stabilization algorithm using an internal exchange.</p>
+        <h2>Summary</h2>
+        <p>INRA is a stablecoin backed by BUSD stored in the contract.</p>
+        <p>The stabilization of the rate is ensured by using the internal exchange system at the current INR-BUSD rate using the average rate for 15 minutes of the Zebpay exchange. For more information about securing the exchange rate, see the relevant section.</p>
+        <p>Additional exchange rate stabilization is provided by independent pools of INR-INRA with a 1 to 1 exchange (excluding transaction fees), as well as independent pools to other stablecoins INR-USDT, INR-USDC and others.</p>
+        <p>The exchange algorithm seeks to reduce the collateral usage with each exchange:</p>
+        <ul>
+            <li>
+                <p>When exchanging BUSD for INRA, a commission is charged, subsequently the commission in INRA is completely burned. Burning will be secured as long as collateral utilization exceeds 50%.</p>
+            </li>
+            <li>
+                <p>When exchanging INRA for BUSD, an additional fee is charged, which goes into the collateral pool, reducing collateral utilization and increasing stored collateral. Additional commission can be increased and decreased automatically, if collateral utilization exceeds 100%</p>
+            </li>
+        </ul>
+        <p>INRA buying is available at any time in the internal exchange at the rate and commission indicated on the site.</p>
+        <p>BUSD buying is available at any time, subject to the availability of sufficient collateral at the rate and commissions indicated on the site.</p>
+        <h3>Rate change</h3>
+        <p>Changing the INRA rate is divided into two stages:</p>
+        <ol>
+            <li>
+                <p>The rate is set by the centralized INRA oracle under the control of the development team, taking into account the exchange rate on external exchanges, as well as the economic situation.</p>
+            </li>
+            <li>
+                <p>In the second stage, control of the rate is transferred to the control of the DAO, which owns the governance token, which will be distributed between the original owners of INRA tokens.</p>
+            </li>
+        </ol>
+        <p>At the stage of centralized control, the exchange rate, burning, and minting of the token is controlled by an oracle managed by the INRA team. Aware of the fact that the centralized management is a bottleneck in trust in the stability of the token, there are plans to make the transition to DAO management after the completion of the following stages</p>
+        <ul>
+            <li>
+                <p>Marketing activity and popularization.</p>
+            </li>
+            <li>
+                <p>Providing the integration of the token into trading systems, exchanges and DEX.</p>
+            </li>
+            <li>
+                <p>Getting no more than 60% collateral usage.</p>
+            </li>
+            <li>
+                <p>Issue of DAO tokens and contract.</p>
+            </li>
+        </ul>
+        <p>The definition of completion of each stage is determined by the project team. To ensure process transparency, following procedures will be followed:</p>
+        <ul>
+            <li>
+                <p>Publication of daily and weekly reports on the use of collateral and issuance of tokens.</p>
+            </li>
+            <li>
+                <p>Publication of information on the status of additional collateral pools.</p>
+            </li>
+            <li>
+                <p>Publication of estimates on the completion of each of the stages of information on the burning of tokens and fees.</p>
+            </li>
+            <li>
+                <p>Publication of information about the work and provision of gateway bridges.</p>
+            </li>
+            <li>
+                <p>Technical user support, AMA sessions, participation in public events, etc.</p>
+            </li>
+        </ul>
+        <h3>Force majeure situations</h3>
+        <ul>
+            <li>
+                <p>In case of a sharp change in the rate of the anchor currency, a situation of too high collateral utilization may occur. When the collateral utilization reaches more than 100%, the exchange system automatically increases the exchange commissions to increase the amount of collateral in the contract. If it is impossible to increase the collateral and the collateral usage exceeds 150%, trading in the internal exchange stops until the pool stabilizes to 102% OR 30 days whichever happens earlier.</p>
+            </li>
+        </ul>
+        <p>If stabilization has not been achieved after 30 days, each owner of the token has the right to demand a return from the provision of the pool share corresponding to the ownership of the token.</p>
+        <ul>
+            <li>
+                <p>Despite careful security checks and controls, in case of detection of critical or fatal errors in the operation of the smart contract, the exchange rate control system, as well as the detection of a hack, the team stops the operation of the smart contract and withdraws security to the escrow contract, which will freeze all BUSD for a period of 30 days to investigate the incident. After this period, the escrow contract will transfer all collateral to the contract address specified during the investigation.</p>
+            </li>
+            <li>
+                <p>Even though control keys are unlikely to be leaked, the keys will be renewed every 6 months, contract ownership is also transferred to the renewed key (only in the team control phase)</p>
+            </li>
+        </ul>
+        <h3>Security</h3>
+        <p>The most vulnerable elements of the system are:</p>
+        <ul>
+            <li>
+                <p>Exchange rate oracle</p>
+            </li>
+            <li>
+                <p>Cross-chain bridge oracles</p>
+            </li>
+        </ul>
+        <p>To ensure oracle security uses a three-point access control scheme:</p>
+        <ul>
+            <li>
+                <p>Signing oracle is located on an encrypted VDS.</p>
+            </li>
+            <li>
+                <p>The VDS has a separate VPN network that is not connected to the network of the host machine.</p>
+            </li>
+            <li>
+                <p>The exact location of the host is known only to the administrator serving the host, but the administrator does not have access to the VDS.</p>
+            </li>
+            <li>
+                <p>The location of the host is not accessible to an administrator with update rights.</p>
+            </li>
+            <li>
+                <p>The upgrade administrator does not have access to the source code and keys on the VDS.</p>
+            </li>
+            <li>
+                <p>Developers do not have access to the host server, the VDS, or the keys stored on the server.</p>
+            </li>
+            <li>
+                <p>Key rotation is performed fully automatically on VDS, without human intervention</p>
+            </li>
+            <li>
+                <p>VDS backup is performed every hour, as well as every key rotation in encrypted form (snapshot) on the resources of the organization (at least 4 geographically separated storages) .</p>
+            </li>
+        </ul>
+        <h3>Independent pools</h3>
+        <p>INRA tokens can be stabilized using independent exchange pools. Typically, such pools are participants performing a 1 to 1 currency exchange peg to a stablecoin, independent exchanges and exchangers.</p>
+        <p>INRA also implements its independent direct exchange pool, but the location of the pool remains anonymous to avoid attacks.</p>
+        <h2>Motivation of the INRA</h2>
+        <p>The team receives a commission, proposed at 1% from each operation on internal exchange. The commission will also be saved when switching to DAO management. Until the collateral level reaches 50%, the team intends to burn all the commission received in INRA and also to exchange the received BUSD for INRA with subsequent burning, except for the costs incurred to ensure operation.</p>
+        <p>INRA we trust.</p>
+        <h2>Usage Policy</h2>
+        <h3>Risks</h3>
+        <p>INRA does its best to reduce the risks of using the token, but you should always be aware of external risks of market changes, technical failures, external factors, including currency instability, targeted attacks on the integrity of the security. The project team cannot be held responsible for losses caused by force majeure, technical failures, external attacks, and others. INRA is not an investment asset, pyramid scheme or casino. By using INRA, you acknowledge that you are fully aware of all the risks associated with cryptocurrency trading and possible losses when using it.</p>
+        <h2>Technical Policy</h2>
+        <h3>Why don&apos;t we use upgradable contracts?</h3>
+        <p>The refreshable contacts mechanism typically uses proxy contracts. Our policy implies the simplest and most direct implementation, so that any person, even with basic programming knowledge, can understand how the contract works. If updates are needed, we will create a separate contract, and set up migration options between the new and the old one.</p>
+        <h2>Affiliation with the Indian Republic</h2>
+        <p>INRA is not affiliated with the Indian Republic or with any state or country. The goal of the project is to create an asset with the main collateral in an alternative currency and the ability to create a direct exchange using independent pools that are provided by third-party project participants.</p>
+        <h3>Sanctions</h3>
+        <p>Project not affiliated with the Indian Republic, but the token may also fall under the sanctions of the United States and Europe. The token is implemented in such a way that we do not have the technical ability to block funds on user&rsquo;s wallets, however, various exchanges (PancakeSwap, Binance) have the ability to control the exchange of the token for specific addresses. Be careful when choosing how to store and exchange the token.</p>
+        <h2>Technical implementation</h2>
+        <h3>Internal exchange</h3>
+        <p>Internal exchange works on the basis of information about the course issued by the oracle. The order of the exchange:</p>
+        <ul>
+            <li>
+                <p>The user goes to the exchange page on the INRA website.</p>
+            </li>
+            <li>
+                <p>The user enters the required amount and direction of the exchange.</p>
+            </li>
+            <li>
+                <p>The site makes a request to the smart contract and a request to the oracle about the current exchange rate.</p>
+            </li>
+            <li>
+                <p>Information about the results of the exchange is displayed to the user.</p>
+            </li>
+            <li>
+                <p>The user initiates the exchange.</p>
+            </li>
+            <li>
+                <p>If the contract does not have access to tokens for exchange, an approval request is sent to the BUSD / INRA contract and the user is prompted to sign the transaction</p>
+            </li>
+            <li>
+                <p>If the transaction is successful or if confirmation is not required, the site sends a request to the oracle server with information about the exchange. The oracle sends to the site a signed message with information about the exchange and expiration time - 60 seconds.</p>
+            </li>
+            <li>
+                <p>Within 60 seconds, the user signs and sends the exchange transaction to the INRA smart contract.</p>
+            </li>
+            <li>
+                <p>The user receives tokens as a result of the exchange, excluding the commission.</p>
+            </li>
+            <li>
+                <p>The platform fee is sent to the INRA team wallet.</p>
+            </li>
+            <li>
+                <p>The fee for providing the service remains in the smart contract</p>
+            </li>
+        </ul>
+        <h3>Exchange rate updates</h3>
+        <p>The exchange rate source is the Zebpay API in the INRA/BUSD pair. The rate is aggregated over a period of 15 minutes and an average is calculated. Checks for errors are performed before updating the rate:</p>
+        <ul>
+        <li>The average rate change over 15 minutes should not exceed 10%. If the change persists for 40 minutes, it performs a rate update</li>
+        <li>Exchange rate fluctuations for a period of 5 minutes do not exceed 30%. This condition is satisfied until stabilization.</li>
+        <li>If the rate fluctuation does not exceed 5% in 5 minutes, the current received rate value is used</li>
+        </ul>
+        <h3>Control protection</h3>
+        <p>One-time large transactions are blocked by the oracle for 10 minutes if the volume of the transaction exceeds the collateral by more than 10%. The Oracle notifies the INRA team of a large exchange. If the command does not block the exchange operation within 10 minutes, it can be performed. The condition is temporarily disabled for the duration of the stablecoin launch.</p>
+        <p>Exchange operations are blocked if the internal rate and the exchange rate in the INRA/BUSD pair on PancakeSwap differ by more than 10%. The condition is temporarily disabled for the duration of the stablecoin launch.</p>
+        <h3>Stabilization</h3>
+        <p>The main mechanism for stabilizing the currency in foreign markets is an internal exchanger operating at the external INRA/BUSD rate. If the exchange rate diverges by more than the amount of the exchange commission, it becomes profitable for users to sell or buy INRA on the internal exchanger, thereby not only equalizing the exchange rate between the external markets of INRA and INR, but also, thanks to the collateral commission, increasing the amount of BUSD in the smart contract.</p>
+        <p>BUSD-INRA stabilization fee: 0%</p>
+        <p>INRA-BUSD stabilization fee: 1%</p>
+        <p>The Stabilization Commission increases when the utilization of the collateral is exceeded by more than 99%.</p>
+        <p>When exceeding from 99% to 110%, the commission is calculated by the formula</p>
+        <i>Fee = (110 - PoolUtilization) / AvgSwaps</i>
+        <p>Where PoolUtilization - the current pool utilization percentage AvgSwaps - the total number of exchanges for the last hour.</p>
+        <p>If the pool utilization exceeds 110%:</p>
+        <i>Fee = (PoolUtilization - 100) / AvgSwaps</i>
+        <p>The fee is changed automatically.</p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <!-- <div class="col-lg-2 col-md-4 footer-contact">
+            <h3>Techie</h3>
+            <p>
+              <strong>Phone:</strong> +1 555 555-5555<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <ul>
+              <li><a href="/"><i class='bx bxs-home'></i> Home</a></li>
+              <li><a href="/#about"><i class='bx bxs-info-circle'></i> About</a></li>
+              <li><a href="/#stats"><i class='bx bx-stats'></i> Stats</a></li>
+              <li><a href="/#adoption"><i class='bx bxs-group'></i> Adoption</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <ul>
+              <li><a href="/#features"><i class='bx bx-list-check'></i> Features</a></li>
+              <li><a href="/#testimonials"><i class='bx bxs-conversation'></i> Testimonials</a></li>
+              <li><a href="/#faq"><i class='bx bx-question-mark'></i> FAQs</a></li>
+              <li><a href="/whitepaper"><i class='bx bxs-file-blank'></i> Whitepaper</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <ul>
+              <li><a href="/terms-of-service"><i class='bx bx-book-open'></i> Terms of Service</a></li>
+              <li><a href="/privacy-policy"><i class="bx bxs-hide"></i> Privacy Policy</a></li>
+              <li><a href="https://twitter.com" class="twitter"><i class="bx bxl-twitter"></i> Twitter</a></li>
+              <!-- <li><a href="https://linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i> LinkedIn</a></li> -->
+              <li><a href="https://github.com" class="github"><i class="bx bxl-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-6 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>INRA</span></strong>. All Rights Reserved.
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        </div> -->
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
